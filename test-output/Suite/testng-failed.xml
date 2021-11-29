@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="Academy.E2EProject.testngListeners"/>
+  </listeners>
+  <test parallel="tests" name="Test3(failed)" preserve-order="true">
+    <classes>
+      <class name="Academy.E2EProject.verifyTitleOnHomePage">
+        <methods>
+          <include name="teardown"/>
+          <include name="initialiseTest"/>
+        </methods>
+      </class> <!-- Academy.E2EProject.verifyTitleOnHomePage -->
+      <class name="Academy.E2EProject.HomePageTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="Test" invocation-numbers="0"/>
+          <include name="initialiseTest"/>
+        </methods>
+      </class> <!-- Academy.E2EProject.HomePageTest -->
+      <class name="Academy.E2EProject.verifyNavigationBarOnHomePage">
+        <methods>
+          <include name="teardown"/>
+          <include name="initialiseTest"/>
+        </methods>
+      </class> <!-- Academy.E2EProject.verifyNavigationBarOnHomePage -->
+    </classes>
+  </test> <!-- Test3(failed) -->
+</suite> <!-- Failed suite [Suite] -->
